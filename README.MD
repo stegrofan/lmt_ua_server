@@ -11,4 +11,8 @@ see [Overview of OPC UA Working groups at VDMA](https://opcua.vdma.org/viewer/-/
 ## Dependencies
 
 Our server is build upon [open62541](https://open62541.org/).
-In the current state it only implements the standard server example of the open62541 project. There are a lot TODOs. 
+In the current state it only implements the standard server example of the open62541 project. There are a lot TODOs.
+
+## Health
+
+![CMake](https://github.com/stegrofan/lmt_ua_server/workflows/CMake/badge.svg?branch=main)
