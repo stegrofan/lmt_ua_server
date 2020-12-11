@@ -1,7 +1,18 @@
-cmake_minimum_required(VERSION 3.19)
+cmake_minimum_required(VERSION 3.7...3.19)
+
+if(${CMAKE_VERSION} VERSION_LESS 3.12)
+    cmake_policy(VERSION ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION})
+endif()
 
 
 project ("lmt_ua_server")
+project(lmt_ua_server VERSION 0.1
+                  DESCRIPTION "Basic demonstration server for OPC uA CS for LMT"
+                  LANGUAGES C CXX)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable (${PROJECT_NAME} "lmt_ua_server.cpp" "lmt_ua_server.h")
 
